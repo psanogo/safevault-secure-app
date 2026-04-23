@@ -1,0 +1,26 @@
+safevault-secure-app/
+│
+├── src/
+│   ├── auth/
+│   │   ├── login.js            # Authentication logic
+│   │   ├── register.js         # Secure user registration
+│   │   └── rbac.js             # Role-based access control
+│   │
+│   ├── db/
+│   │   └── database.js         # Database connection with parameterized queries
+│   │
+│   ├── validation/
+│   │   └── inputValidator.js   # Input sanitization and validation logic
+│   │
+│   ├── routes/
+│   │   └── vaultRoutes.js      # Protected application routes
+│   │
+│   └── app.js                  # Main application entry point
+│
+├── tests/
+│   ├── sqlInjection.test.js    # SQL injection prevention tests
+│   ├── xss.test.js             # XSS mitigation tests
+│   └── auth.test.js            # Authentication and RBAC tests
+│
+├── README.md
+└── package.json
